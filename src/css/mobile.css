@@ -8,3 +8,21 @@
   margin: 0.8rem;
   margin-top: 0;
 }
+
+/* original */
+.custom-app-button {
+  height: 100%;
+  width: auto;
+  margin: 5px 8px 5px 0;
+  padding: 5px;
+  border: solid 1px;
+  border-color: #ebeeef;
+  background-color: #f7f9fa;
+  box-shadow: none;
+  color: #3498db;
+  /* font-weight: bold; */
+}
+
+.custom-app-button:hover{
+  background-color: #c9d6dd;
+}
