@@ -24,7 +24,7 @@ jQuery.noConflict();
       $button.innerText = $appButtonsArray[i][0];
       $button.className = 'custom-app-button';
       var url = $appButtonsArray[i][1];
-      console.log(url);
+      // console.log(url);
       $button.setAttribute('onclick', `location.href='${url}'`);
       $span.append($button);
       $spaceElement.append($span);

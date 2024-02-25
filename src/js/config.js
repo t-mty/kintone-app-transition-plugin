@@ -17,7 +17,7 @@ jQuery.noConflict();
   } else {
     var $array = config.appButtons.split(',');
     while ($array.length) $appButtonsArray.push($array.splice(0, 2));
-    console.log($appButtonsArray);
+    // console.log($appButtonsArray);
   }
 
   //サブテーブルを初期配置する
@@ -54,7 +54,7 @@ jQuery.noConflict();
   function addRow() {
     var $nowRow = $(this).closest('tr');
     var $newRow = $nowRow.after('<tr></tr>').next('tr');
-    console.log('row: ' & $nowRow.index(this));
+    // console.log('row: ' & $nowRow.index(this));
 
     $newRow.append('<td><div class="kintoneplugin-table-td-control"><div class="kintoneplugin-table-td-control-value"><div class="kintoneplugin-input-outer"><input class="kintoneplugin-input-text button-name" type="text"></div></div></div></td>');
     $newRow.append('<td><div class="kintoneplugin-table-td-control"><div class="kintoneplugin-table-td-control-value"><div class="kintoneplugin-input-outer"><input class="kintoneplugin-input-text button-name" type="url"></div></div></div></td>');
@@ -77,7 +77,7 @@ jQuery.noConflict();
       }
     }
     var appButtons = data.join();
-    console.log(appButtons);
+    // console.log(appButtons);
     kintone.plugin.app.setConfig({
       appButtons: appButtons
     }, function() {
