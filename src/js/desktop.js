@@ -10,6 +10,8 @@ jQuery.noConflict();
     if ($spaceElement === null) {
       throw new Error('The header element is unavailable on this page');
     }
+    
+    if ($('.custom-app-button').length !== 0) return e;
 
     //configの値を取得する
     var $array = config.appButtons.split(',');
